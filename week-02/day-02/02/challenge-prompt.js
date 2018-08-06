@@ -67,7 +67,7 @@ for(var i = 0; i < numArray.length; i++){
 
 for(var i = 0; i < numArray.length; i++){
   if(numArray[i] === 11){
-    console.log("Index of " + numArray[i] + " is " + i);
+    alert("Index of " + numArray[i] + " is " + i);
   }
 }
 
