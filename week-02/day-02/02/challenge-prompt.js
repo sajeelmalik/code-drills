@@ -29,7 +29,7 @@ ourArray.push("world");
 
 console.log(ourArray);
 
-// This seperator is here to make your console logs a little easier to read 
+// This separator is here to make your console logs a little easier to read 
 // by creating separations between the different sections of the activity
 console.log("--------------------------Separator 1--------------------------");
 
@@ -46,12 +46,13 @@ console.log(oneToTen[4]);
 console.log(oneToTen[7]);
 
 
-// This seperator is here to make your console logs a little easier to read 
-// by creating seperations between the different sections of the activity
+// This separator is here to make your console logs a little easier to read 
+// by creating separations between the different sections of the activity
 console.log("--------------------------Separator 2--------------------------");
 
 // We've declared this array for you
 var numArray = [2, 65, 3, 7, 39, 22, 11, 94, 299, 9, 20, 21, 51, 37];
+
 // iterate through numArray and create an individual console log for every number greater than 50
 
 for(var i = 0; i < numArray.length; i++){
@@ -64,23 +65,49 @@ for(var i = 0; i < numArray.length; i++){
 // iterate through numArray and create an alert that tells us 
 // the index of all the occurances of the number 11
 
+for(var i = 0; i < numArray.length; i++){
+  if(numArray[i] === 11){
+    console.log("Index of " + numArray[i] + " is " + i);
+  }
+}
 
 
 // iterate through numArray and console log the sum of all the numbers
+var sum = 0
+for(var i = 0; i < numArray.length; i++){
+  sum += numArray[i];
+}
 
-
+console.log(sum);
 
 // iterate through numArray and console log the sum of all the numbers greater than 50
+
+var sum50 = 0
+for(var i = 0; i < numArray.length; i++){
+  if(numArray[i] > 50){
+    sum50 += numArray[i];
+  }
+}
+
+console.log(sum50);
 
 
 
 // iterate through numArray and console log the sum of all the even numbers
 
+var sumEven = 0
+for(var i = 0; i < numArray.length; i++){
+  if(numArray[i] % 2 === 0){
+    sumEven += numArray[i];
+  }
+}
+
+console.log(sumEven);
 
 
 // This seperator is here to make your console logs a little easier to read 
 // by creating seperations between the different sections of the activity
-console.log("--------------------------Seperator 3--------------------------");
+console.log("--------------------------Separator 3--------------------------");
 
 // We've declared this array for you
 var fruits = [
@@ -88,27 +115,60 @@ var fruits = [
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"];
 // iterate through fruits and console log the number of times "Apple" appears in the array
 
+var apple = 0;
+
+for(var i = 0; i < fruits.length; i++){
+  if(fruits[i] === "Apple"){
+    apple++;
+  }
+}
+
+console.log("Apple appears these many times: " + apple);
+
 
 
 // iterate through fruits and console log the number of times "Peach" appears in the array
+var peach = 0;
 
+for(var i = 0; i < fruits.length; i++){
+  if(fruits[i] === "Peach"){
+    peach++;
+  }
+}
 
+console.log("Peach appears these many times: " + peach);
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
+
+var countP = 0;
+
+for(var i = 0; i < fruits.length; i++){
+  if(fruits[i][0]=== "P"){
+    countP++;
+  }
+}
+console.log("These many fruits start with P: " + countP);
 
 
 
 // create a new empty array named uniqueFruits
 
+var uniqueFruits = [];
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
+
+for(var i = 0; i < fruits.length; i++){
+  if(!uniqueFruits.includes(fruits[i])){
+    uniqueFruits.push(fruits[i]);
+  }
+}
 
 
 
 // console log out your uniqueFruits array
 
-
+console.log(uniqueFruits)
 
 
 // This seperator is here to make your console logs a little easier to read 
