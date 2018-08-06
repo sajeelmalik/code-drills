@@ -19,7 +19,7 @@ var bool = false;
 function fun(arg) {
 
   //Your answer in the console.log()
-  console.log();
+  console.log(arg ? "Yeah, it's true": "Nah, it's false");
 }
 
 fun(bool) 
@@ -37,12 +37,23 @@ fun(bool)
 
 // ==============================================================
 
+var likesBasketball = true;
+
+function canYouBall(arg){
+  console.log(arg ? "Welcome to the Warriors": "It's ok, there's always code :)");
+}
+
+canYouBall(likesBasketball);
  
 // ========================= QUESTION 3 =========================
 // In this exercise, make a function which takes in an argument (very similar to the past two questions). If the argument is true, console.log("I exist"). If the argument is false, console.log("Nobody's home").
 
 
 // ==============================================================
+
+function exist(arg){
+  console.log(arg ? "I exist": "Nobody's home");
+}
 
 
 // ========================= QUESTION 4 =========================
@@ -54,6 +65,8 @@ var personTwo;
 
 // ==============================================================
 
+exist(personOne); // I exist
+exist(personTwo); // "Nobody's Home"
 
 // ========================= QUESTION 5 =========================
 var zero = 0;
@@ -67,6 +80,11 @@ var three = 3;
 
 
 // ==============================================================
+
+exist(zero); // Nobody's Home
+exist(one); // I exist
+exist(two); // I exist
+exist(three); // I exist
 
   </script>
 </body>
