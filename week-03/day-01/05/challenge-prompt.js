@@ -34,7 +34,7 @@ var nestedArray = [[1,2], ["nested", ["Radio Flyer Wagon", "Chemistry Set", ["Jo
 var target;
 // assign `target` the value of "Yo-Yo" using the `nestedArray` variable
 // 
-
+target = nestedArray[1][1][2][1];
 
 
 
@@ -49,7 +49,7 @@ var target;
 // assign `target` the value of "Sock Monkey" using the `nestedArray` variable
 // 
 
-
+target = nestedArray[1][1][1];
 
 
 // This should console log out "Sock Monkey"
@@ -63,7 +63,7 @@ var target;
 // assign `target` the value of 42 using the `nestedNumberArray` variable
 // 
 
-
+target = nestedNumberArray[6][4][2];
 
 
 // This should console log out 42
@@ -77,7 +77,7 @@ var target;
 // assign `target` the value of "Legos" using the `nestedMixedArray` variable
 // 
 
-
+target = nestedMixedArray[1][5];
 
 
 // This should console log out "Legos"
@@ -88,7 +88,7 @@ console.log("==================== Question 05 ====================");
 // Nested Object Access
 // It is important to remember the following with arrays and Objects:
 // Arrays: Are ordered, integer-indexed collections of any object. This is a data structure where order matters and elements within an array are accessed by index.
-// Objects: Are dictionary-like collections of unique keys and their values. This is a data structure where order does not matter, and elements within aObject are accessed by a key which returns a value.
+// Objects: Are dictionary-like collections of unique keys and their values. This is a data structure where order does not matter, and elements within an Object are accessed by a key which returns a value.
 
 // Your desired target is: "Value!"
 var nestedObject = {"outer": {"innerKey": {"object": {"key": "Value!"}}}}
@@ -96,7 +96,7 @@ var target;
 // assign `target` the value of "Value!" using the `nestedObject` variable
 // 
 
-
+target = nestedObject.outer.innerKey.object.key;
 
 
 // This should console log out "Value!"
@@ -111,8 +111,7 @@ var target;
 // assign `target` the value of "goal" using the `nestedMixedDataTypes` variable
 // 
 
-
-
+target = nestedMixedDataTypes.array.array.array;
 
 // This should console log out "goal"
 console.log(target);
