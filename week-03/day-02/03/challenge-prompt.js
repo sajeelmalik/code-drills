@@ -7,8 +7,17 @@
 function checkWibble(str) {
 
   // ---------- Your Code Here ----------
+var count = 0;
+  for(var i = 0; i < str.length; i++){
+    count++;
+  }
 
-
+  if(count % 2 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
 
 
 
@@ -26,13 +35,21 @@ function checkWibble(str) {
 function checkWobble(str) {
 
   // ---------- Your Code Here ----------
+  var vowels = ['a', 'e', 'i', 'o', 'u']
+  var count = 0;
+  for(var i = 0; i < str.length; i++){
+    if(vowels.includes(str[i])){
+      count++;
+    }
+    
+  }
 
-
-  
-
-
-
-
+  if(count % 2 === 0){
+    return false;
+  }
+  else{
+    return true;
+  }
 
   // ----------- End Code Area -----------
 
@@ -48,11 +65,18 @@ function checkWobble(str) {
 function wibbleWobble(arr) {
   
   // ---------- Your Code Here ----------
+  for( var i = 0; i < arr.length; i++){
 
-
-  
-
-
+    if(checkWibble(arr[i]) && checkWobble(arr[i])){
+      arr[i] = "WibbleWobble"
+    }
+    else if(checkWibble(arr[i])){
+      arr[i] = "Wibble";
+    }
+    else if(checkWobble(arr[i])){
+      arr[i] = "Wobble";
+    }
+  }
 
 
 

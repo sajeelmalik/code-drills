@@ -8,10 +8,27 @@ function anagramCheck (str1, str2) {
 
   // ---------- Your Code Here ----------
 
+  str1 = str1.trim().toLowerCase();
+  str2 = str2.trim().toLowerCase();
 
+  str1 = str1.replace(/\s+/g, '')
+  str2 = str2.replace(/\s+/g, '')
 
+  console.log(str1, str2)
 
+  if(str1.length != str2.length){
+    return false;
+  }
 
+  for(var i = 0; i < str1.length; i++){
+    str2 = str2.replace(str1[i], "");
+  }
+  console.log(str2);
+  if(str2 === ""){
+    return true;
+  }
+
+  return false;
 
   // ----------- End Code Area -----------
 

@@ -5,20 +5,30 @@
 // the while loop should contain the for loop that iterates through the array and 
 // continue until you've been able to iterate through the array without swapping 
 // any elements
-
+var counter = 0;
 
 function bubbleSortTwo(arr) {
     // ================= code goes here ===========================
 
-    
+    //exactly what I did for the last one
+    var swapped;
 
+    do {
+        swapped = false;
 
+        for(var i = 0; i < arr.length; i++) {
+            counter++;
+            if(arr[i] && arr[i + 1] && arr[i] > arr[i + 1]) {
+                var temp = arr[i+1];
+                arr[i+1] = arr[i];
+                arr[i] = temp;
+                swapped = true;
+            }
 
+        }
 
-
-
-
-
+    } while(swapped);
+    return arr;
 
     
     // ============================================================
@@ -28,3 +38,4 @@ function bubbleSortTwo(arr) {
 var age = [34, 23, 3, 76, 20, 84, 18, 9];
 var newAge = bubbleSortTwo(age);
 console.log(newAge)
+console.log(counter)
