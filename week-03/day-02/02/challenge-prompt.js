@@ -9,11 +9,25 @@ function checkDivisors(arr) {
 
   // ---------- Your Code Here ----------
 
+  for(var i = 0; i < arr.length; i++){
+    var temp = arr[i];
 
+    for(var j = 0; j < arr.length; j++){
 
+      var temp2 = arr[j]
+      // console.log(temp, temp2, temp%temp2)
+      if(i != j){
 
+        if((temp % temp2) === 0){
 
+          return true;
 
+        }
+      }
+    }
+  }
+
+  return false;
   // ----------- End Code Area -----------
 
 }

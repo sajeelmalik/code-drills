@@ -24,10 +24,20 @@ var toyArray = ["Water Balloon","Silly Putty","Paint-by-Numbers Kit",
 // }
 
 function returnCustomObject(arr){
-	var obj ={};
+	var obj = {};
   
   // ---------- Your Code Here ----------
-
+  for(var i = 0; i < arr.length; i++){
+    if(!(obj.hasOwnProperty(arr[i]))){
+      var count = 0;
+      for(var j = 0; j < arr.length; j++){
+        if (arr[j] === arr[i]){
+          count++;
+        }
+      }
+      obj[arr[i]] = count;
+    }
+  }
 
 
 

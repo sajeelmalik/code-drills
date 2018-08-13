@@ -43,14 +43,19 @@ $(function () {
   $("#submit-button").on("click", function(event){
     event.preventDefault();
     var str = $("#user-input").val();
-    $("#button-area").append("<div class ='btn btn-dark new-buttons' value='" + str + "'>" + str + "</div>");
-    console.log($("#user-input").val());
-    $("#user-input").val("");
-    console.log($("#user-input").val());
+    if (str != ""){
+      $("#button-area").append("<button class ='btn btn-dark new-buttons' value='" + str + "'>" + str + "</button> ");
+      console.log($("#user-input").val());
+      $("#user-input").val("");
+      console.log($("#user-input").val());
+    }
   });
 
+  
   $(".new-buttons").on("click", function(){
-    $("#display-area").append($(".new-buttons").val());
+
+    console.log($(this).val());
+    $("#display-area").append($(this).val());
   });
 
   // ---------- End of Code area ----------
