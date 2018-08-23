@@ -34,7 +34,7 @@ function twoAverage(num1, num2) {
   // -------------------- Your Code Here --------------------
 
 
-  return (num1, num2)/2;
+  return (num1 + num2)/2;
 
 
   // --------------------- End Code Area --------------------
@@ -60,7 +60,7 @@ function prepend(arr, elem) {
   // -------------------- Your Code Here --------------------
   
 
-  return arr.unshift(elem);
+  arr = arr.unshift(elem);
 
 
   // --------------------- End Code Area --------------------
@@ -95,7 +95,7 @@ function addToObject(obj, key, arr) {
   // -------------------- Your Code Here --------------------
 
 
-  
+  obj[key] = arr;
 
 
   // --------------------- End Code Area --------------------
@@ -124,8 +124,7 @@ function strToArray(str) {
 
   // -------------------- Your Code Here --------------------
 
-
-
+  return str.split(/\s+/);
 
 
   // --------------------- End Code Area --------------------
