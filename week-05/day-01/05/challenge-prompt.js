@@ -12,10 +12,22 @@
 // ----------------------------------------------------------
 function checkTriange(arr) {
   // -------------------- Your Code Here --------------------
+  var types = [];
+  var i = 0;
+
+  if(arr[i] === arr[i+1] && arr[i] === arr[i+2]){
+    types.push("Equilateral Triange")
+  }
+  
+  if(arr[i] === arr[i+1] || arr[i] === arr[i+2] ||  arr[i+1] === arr[i+2]){
+    types.push("Isoceles Triange")
+  }
+  else{
+    types.push("Scalene Triange")
+  }
 
 
-
-
+  return types;
 
 
   // --------------------- End Code Area --------------------

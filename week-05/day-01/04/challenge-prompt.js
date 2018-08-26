@@ -12,10 +12,18 @@
 // ----------------------------------------------------------
 function findRepeats(arr) {
   // -------------------- Your Code Here --------------------
+  var orderedArr = arr.sort();
+  var repeats = [];
+
+  for (var i = 0; i < orderedArr.length - 1; i++) {
+    //checks if element is already in the ordered array and if the element and the next are equal. If so, push to repeats
+    if (!repeats.includes(orderedArr[i]) && orderedArr[i + 1] == orderedArr[i]) {
+        repeats.push(orderedArr[i]);
+    }
+}
 
 
-
-
+ return repeats;
 
 
   // --------------------- End Code Area --------------------

@@ -12,8 +12,25 @@
 // ----------------------------------------------------------
 function zipArrays(arr1, arr2) {
   // -------------------- Your Code Here --------------------
+  var length = Math.max(arr1.length, arr2.length)
 
+  var addedArray = [];
+  for(var i = 0; i < length; i++){
+    //if both indices exist
+    console.log(addedArray)
+    if(arr1[i] && arr2[i]){
+      addedArray.push(arr1[i] + arr2[i]); 
+    }
+    else if(arr1[i]){
+      addedArray.push(arr1[i]); 
+    }
+    else if(arr2[i]){
+      addedArray.push(arr2[i]); 
+    }
+   
+  }
 
+  return addedArray;
 
 
 
