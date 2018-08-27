@@ -17,15 +17,39 @@
   function uncommon(s1, s2) {
 // ===================== YOUR WORK HERE =====================
 
+    var obj = {};
+    var array = [];
 
+    s1 = s1.split(" ");
+    s2 = s2.split(" ");
 
+    for (var i = 0 ; i < s1.length ; i++) {
+      if(!array.includes(s1[i])){
+        array.push(s1[i]);
+      }
+      
 
+    }
+
+    for (var i = 0 ; i < s2.length ; i++) {
+      if (array.includes(s2[i])){
+        var index = array.indexOf(s2[i]);
+        array.splice(index, 1);
+      }
+      else{
+        array.push(s2[i]);
+      }
+
+        
+    }
+
+    return array;
 // ==========================================================
   }
 
 // Should return: ["Sasha", "nice", "Robert", "kind"]
   console.log(uncommon(sent1, sent2))
-  
+  console.log(uncommon("Sasha is very nice nice" , "Robert is very kind"))
   </script>
 </body>
 </html>

@@ -12,11 +12,40 @@
 
     var movements = "UUURDLURLDDRDLLLLRRUUDDDRLRU"
 
+    var limitChars = "URLD"
+
 
     function backToSquareOne(moves) {
 // ===================== YOUR WORK HERE =====================
+    var y = 0;
+    var x = 0;
+    
 
+    for (var i = 0; i < moves.length; i++){
+      if(limitChars.includes(moves[i])){
+        switch (moves[i]){
+          case "U":
+            y++;
+            break;
+          case "D":
+            y--;
+            break;
+          case "L":
+            x--;
+            break;
+          case "R":
+            x++;
+            break;
+        }
+      }
+      else{
+        alert("Invalid moves")
+      } 
+    }
+      
+    console.log("represents [y, x]", y, x)
 
+    return (x == 0) && (y == 0)
 
 
 // ==========================================================
