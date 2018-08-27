@@ -8,8 +8,7 @@ Starter Code :*/
 function addObjectProperty(obj1, key, obj2) {
     // your code here
 
-
-
+    obj1[key] = obj2;
 
 
     // code ends here
@@ -39,8 +38,12 @@ Starter Code :*/
 function getElementsUpTo(array, n) {
     // your code here
 
-
-
+    var newArr = [];
+    for(var i = 0; i < n; i++){
+        newArr.push(array[i]);
+    }
+    
+    return newArr;
 
 
     // code ends here
