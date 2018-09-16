@@ -33,7 +33,7 @@ function evenLetters(str) {
     return letters;
 }
 
-console.log(evenLetters("chicken"))
+// console.log(evenLetters("chicken"))
 
 app.get("/:input", function (req, res) {
     var input = req.params.input;

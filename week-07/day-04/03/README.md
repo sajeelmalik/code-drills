@@ -34,11 +34,11 @@ Proceed to app.js in the public folder. You will be asked to do the following:
 4. Complete a click listener function, writing a PUT route in addition to some other logic.
 5. Complete a click listener function, writing a POST route in addition to some other logic.
 
-All instructions are given in detaill within the app.js file. 
+All instructions are given in detail within the app.js file. 
 
 You will know you've finished when:
 - You can fill out the form at /add and the new student is rendered at /. 
 - You select a student, then a skill, and the skill is immediately rendered next to the student.
-- When a student has learned all the possible skills, they dissapear from the page.
+- When a student has learned all the possible skills, they dissappear from the page.
 
 When you can say you've met all the above requirements, please proceed to 04, where we will deploy this app to Heroku. 
