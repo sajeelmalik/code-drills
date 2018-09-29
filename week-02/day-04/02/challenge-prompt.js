@@ -16,7 +16,7 @@ $(document).ready(function () {
             // 4. The text variable will continue to grow in length as the user clicks the question mark. Reassign the text variable to itself plus a new random letter. You will need to use the possibleLetters variable to accomplish this. Research the charAt() method if you're stuck.
             var randomIndex = Math.floor(Math.random()*possibleLetters.length);
 
-            text = text + possibleLetters[randomIndex];
+            text = possibleLetters[randomIndex];
 
             //5. Finally have this function return the current value of the text variable
             return text;
