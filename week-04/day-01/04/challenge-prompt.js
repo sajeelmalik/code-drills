@@ -10,8 +10,15 @@
 //
 // -------------------- Your Code Here --------------------
 
+function isEven(num){
+  return (num % 2) === 0;
+}
 
-
+// function asc(arr){
+//   for(var i = 0; i < arr.length; i++){
+//     if(arr[i])
+//   }
+// }
 
 
 // --------------------- End Code Area --------------------
@@ -23,9 +30,23 @@
 function upDownSort(arr) {
   // -------------------- Your Code Here --------------------
 
+  var evens = [];
+  var odds = [];
 
+  for (var i = 0; i < arr.length; i++){
+    if(isEven(arr[i])){
+      evens.push(arr[i]);
+    }
+    else{
+      odds.push(arr[i]);
+    }
 
+  }
 
+  evens.sort();
+  odds.sort();
+
+  return evens.concat(odds);``
 
   // --------------------- End Code Area --------------------
 }

@@ -8,6 +8,7 @@
 
 // var hasRun = false;
 
+//solved with hint
 function onlyOnce() {
   // -------------------- Your Code Here --------------------
 
